@@ -1,0 +1,178 @@
+{
+  "inputSha256": "8aef0635ae4ae6ff1eacfc6060d1b9a3bf0cdf3010c3b2815a9e6609c9e43a49",
+  "slides": [
+    {
+      "groups": [
+        {
+          "duration": 0.6,
+          "start": 0.15,
+          "effect": "fade",
+          "label": "主题",
+          "shapeIds": [
+            3
+          ]
+        },
+        {
+          "duration": 0.55,
+          "start": 1.05,
+          "effect": "fade",
+          "label": "用途",
+          "shapeIds": [
+            4
+          ]
+        },
+        {
+          "duration": 0.55,
+          "start": 2.05,
+          "effect": "fade",
+          "label": "原则",
+          "shapeIds": [
+            5
+          ]
+        }
+      ],
+      "slide": 1
+    },
+    {
+      "groups": [
+        {
+          "duration": 0.5,
+          "start": 0.15,
+          "effect": "fade",
+          "label": "阅读提示",
+          "shapeIds": [
+            4
+          ]
+        },
+        {
+          "duration": 0.55,
+          "start": 1.1,
+          "effect": "fade",
+          "label": "步骤1",
+          "shapeIds": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "effect": "wipe",
+          "duration": 0.3,
+          "start": 2.0,
+          "shapeIds": [
+            8
+          ],
+          "direction": "fromLeft",
+          "label": "流程连接"
+        },
+        {
+          "duration": 0.55,
+          "start": 2.6,
+          "effect": "fade",
+          "label": "步骤2",
+          "shapeIds": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "effect": "wipe",
+          "duration": 0.3,
+          "start": 3.5,
+          "shapeIds": [
+            12
+          ],
+          "direction": "fromLeft",
+          "label": "流程连接"
+        },
+        {
+          "duration": 0.55,
+          "start": 4.1,
+          "effect": "fade",
+          "label": "步骤3",
+          "shapeIds": [
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "effect": "wipe",
+          "duration": 0.3,
+          "start": 5.0,
+          "shapeIds": [
+            16
+          ],
+          "direction": "fromLeft",
+          "label": "流程连接"
+        },
+        {
+          "duration": 0.55,
+          "start": 5.6,
+          "effect": "fade",
+          "label": "步骤4",
+          "shapeIds": [
+            17,
+            18,
+            19
+          ]
+        },
+        {
+          "duration": 0.55,
+          "start": 7.1,
+          "effect": "fade",
+          "label": "收束结论",
+          "shapeIds": [
+            20
+          ]
+        }
+      ],
+      "slide": 2
+    },
+    {
+      "groups": [
+        {
+          "duration": 0.55,
+          "start": 0.2,
+          "effect": "fade",
+          "label": "验证1",
+          "shapeIds": [
+            4,
+            5
+          ]
+        },
+        {
+          "duration": 0.55,
+          "start": 1.5999999999999999,
+          "effect": "fade",
+          "label": "验证2",
+          "shapeIds": [
+            6,
+            7
+          ]
+        },
+        {
+          "duration": 0.55,
+          "start": 3.0,
+          "effect": "fade",
+          "label": "验证3",
+          "shapeIds": [
+            8,
+            9
+          ]
+        },
+        {
+          "duration": 0.55,
+          "start": 4.6,
+          "effect": "fade",
+          "label": "能力边界",
+          "shapeIds": [
+            10
+          ]
+        }
+      ],
+      "slide": 3
+    }
+  ]
+}

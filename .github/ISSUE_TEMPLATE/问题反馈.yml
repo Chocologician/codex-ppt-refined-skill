@@ -1,0 +1,39 @@
+name: 问题反馈
+description: 报告排版、动画、安装或脚本问题
+title: '【问题】'
+body:
+  - type: markdown
+    attributes:
+      value: 请使用脱敏或合成材料，不上传密钥、个人证明或未公开研究。
+  - type: dropdown
+    id: module
+    attributes:
+      label: 涉及模块
+      options: [安装与使用, 图片式制作, 可编辑重建, 风格与排版, 动画与节奏, 测试或文档]
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 运行环境
+      description: 操作系统、代理工具、演示软件与版本；项目版本或提交。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 复现步骤
+      description: 提供最小输入、命令与错误输出。
+    validations:
+      required: true
+  - type: textarea
+    id: comparison
+    attributes:
+      label: 预期与实际结果
+      description: 视觉问题附脱敏截图，动画问题说明触发方式和时间。
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: 已尝试的检查或解决方法

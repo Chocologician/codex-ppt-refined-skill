@@ -1,0 +1,29 @@
+name: 仓库检查
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  static:
+    name: 文档、来源与代码检查
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m unittest discover -s tests -v
+  powershell-syntax:
+    name: 动画脚本语法检查
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 解析动画脚本（不执行桌面放映）
+        shell: pwsh
+        run: |
+          @(Get-ChildItem skills/codex-ppt/scripts -Filter '*.ps1'; Get-ChildItem examples -Recurse -Filter '*.ps1') | ForEach-Object {
+            $parseTokens = $null
+            $parseErrors = $null
+            [void][System.Management.Automation.Language.Parser]::ParseFile($_.FullName, [ref]$parseTokens, [ref]$parseErrors)
+            if ($parseErrors.Count) { throw ($parseErrors | Out-String) }
+          }

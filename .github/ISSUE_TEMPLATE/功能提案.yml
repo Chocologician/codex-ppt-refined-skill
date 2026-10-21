@@ -1,0 +1,34 @@
+name: 功能提案
+description: 讨论新工作流、风格、工具或兼容能力
+title: '【提案】'
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 想解决什么问题
+      description: 描述真实场景及现有方案的不足。
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: 方案与适用范围
+      description: 可选还是默认，依赖哪些平台或外部服务？
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 如何验证效果
+      description: 提供公开样例、合成输入、对比或测试计划，未验证请注明。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 替代方案、兼容性与来源
+  - type: dropdown
+    id: contribution
+    attributes:
+      label: 希望如何参与
+      options: [提供想法欢迎认领, 提供案例或视觉示例, 愿意实现或补充文档, 愿意协助测试评审]

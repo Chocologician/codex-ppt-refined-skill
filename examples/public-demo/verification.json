@@ -1,0 +1,27 @@
+{
+  "purpose": "公开合成的原生排版与串行动画示例，不是生图效果样片。",
+  "environment": {
+    "osVersion": "10.0.26200.0",
+    "powerPointVersion": "16.0",
+    "powerShellVersion": "7.6.5"
+  },
+  "slideCount": 3,
+  "effectCount": 16,
+  "entrySeconds": {
+    "1": 2.5999999999999996,
+    "2": 7.6499999999999995,
+    "3": 5.1499999999999995
+  },
+  "savedTimingVerified": true,
+  "finalPixelsIdenticalToSource": true,
+  "nativePowerPointVideoExported": true,
+  "files": {
+    "source.pptx": "8aef0635ae4ae6ff1eacfc6060d1b9a3bf0cdf3010c3b2815a9e6609c9e43a49",
+    "animated.pptx": "f090389ba791d9631a4d8e71b634cbd41ef62f7e7ea6724c9ecc1ad0ec4fa4e0",
+    "animation-plan.json": "40f0aeb35168c51cde8a0ab182aa292ba34d29682ad4c4755720d8b748e2e8fc",
+    "slide-1.png": "29b0952dc3f21003084244d70ace4e47472696d5b9e6a4b916833a1a5f43bea8",
+    "slide-2.png": "87d6fc180f016c816bd5bb7d93ecd154a7ead22fa51df6b5f7b395f27e89b2e5",
+    "slide-3.png": "c6ef5c11b171596733b9487dd6e57496a1f95ca0b21be8abec24156a48cdac68",
+    "preview.gif": "1544f433755f82718269aa4de1836bc4271ff99c38d4878e5c8cce38a6e3021d"
+  }
+}
