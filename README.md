@@ -156,6 +156,8 @@ tests/                  静态、来源和公开示例检查
 
 参与协作请遵循[行为准则](CODE_OF_CONDUCT.md)，安全问题与敏感信息处理方式见[安全说明](SECURITY.md)。
 
+交流入口和提交流程见[协作与讨论](docs/协作与讨论.md)：经验交流、方案讨论和未成形想法进入 Discussions；可执行的问题进入 Issue；完成后的修改通过 Pull Request 提交。
+
 ## 本地检查
 
 ~~~shell

@@ -1,1 +1,8 @@
-blank_issues_enabled: true
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 参与讨论与经验交流
+    url: https://github.com/Chocologician/codex-ppt-refined-skill/discussions
+    about: 分享使用经验、比较方案、讨论视觉方向和未成形的想法。适合讨论的问题请不要直接开 Issue。
+  - name: 📖 先阅读贡献指南
+    url: https://github.com/Chocologician/codex-ppt-refined-skill/blob/main/CONTRIBUTING.md
+    about: 了解 Issue、Pull Request、来源登记和测试要求。

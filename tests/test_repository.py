@@ -75,6 +75,13 @@ class RepositoryTests(unittest.TestCase):
                 if field['type'] == 'dropdown':
                     self.assertGreaterEqual(len(field['attributes']['options']), 2)
 
+    def test_collaboration_entrypoints(self):
+        config = (ROOT / '.github/ISSUE_TEMPLATE/config.yml').read_text(encoding='utf-8')
+        self.assertIn('/discussions', config)
+        self.assertIn('blank_issues_enabled: false', config)
+        self.assertTrue((ROOT / 'docs/协作与讨论.md').is_file())
+        self.assertIn('Pull Request', (ROOT / 'docs/协作与讨论.md').read_text(encoding='utf-8'))
+
     def test_maintenance_entrypoints(self):
         for relative in ['GOVERNANCE.md', 'ROADMAP.md', 'CONTRIBUTING.md', '.github/PULL_REQUEST_TEMPLATE.md', 'docs/测试说明.md', 'docs/发布与上游同步.md']:
             self.assertTrue((ROOT / relative).is_file())

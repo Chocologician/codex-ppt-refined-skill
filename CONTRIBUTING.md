@@ -14,6 +14,8 @@
 | 使用案例 | 案例贡献模板 | 改进前后、判断依据、环境与限制 |
 | 小型修复 | 直接提交合并请求 | 单一目标与必要验证 |
 
+经验交流、方案比较和未成形想法请进入 [Discussions](https://github.com/Chocologician/codex-ppt-refined-skill/discussions)；Issue、Pull Request 和讨论的分工见[协作与讨论](docs/协作与讨论.md)。
+
 ## 提交步骤
 
 1. 从仓库创建自己的分支或复刻仓库，围绕一个问题修改。
