@@ -1,24 +1,61 @@
 # AI 演示文稿工作流
 
-让 AI 辅助制作从内容与视觉稿，继续走到可编辑对象、原生动画和实际交付。
+![AI 演示文稿工作流：让想法成为好作品](docs/assets/banner.svg)
 
-这是供支持技能文件的 AI 代理使用的工作流技能，附带部分可独立运行的脚本。当前处于实验性迭代阶段。它不提供独立图形界面，也不是一键将任意图片转换为可编辑PPT的软件。
+<p align="center">
+  <strong>从视觉方向，到可编辑交付</strong><br>
+  面向 AI 代理的中文演示文稿工作流：图片式制作、原生重建与精编动画。
+</p>
 
-项目标识：codex-ppt-refined-skill；技能名称：codex-ppt。
+<p align="center">
+  <a href="https://github.com/Chocologician/codex-ppt-refined-skill/actions/workflows/check.yml"><img src="https://github.com/Chocologician/codex-ppt-refined-skill/actions/workflows/check.yml/badge.svg" alt="仓库检查"></a>
+  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/版本-0.4.0%20公开预览-ea9357" alt="版本 0.4.0 公开预览"></a>
+  <a href="https://github.com/Chocologician/codex-ppt-refined-skill/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Chocologician/codex-ppt-refined-skill?label=许可" alt="MIT 许可"></a>
+  <a href="https://github.com/Chocologician/codex-ppt-refined-skill/issues"><img src="https://img.shields.io/github/issues/Chocologician/codex-ppt-refined-skill?label=议题" alt="议题"></a>
+</p>
+
+<p align="center">
+  <a href="#快速开始">快速开始</a> ·
+  <a href="#公开示例">公开示例</a> ·
+  <a href="docs/快速开始.md">完整文档</a> ·
+  <a href="CONTRIBUTING.md">参与贡献</a> ·
+  <a href="CHANGELOG.md">版本记录</a>
+</p>
+
+这是供支持技能文件的 AI 代理使用的工作流技能，并附带可独立运行的辅助脚本。项目聚焦于“先理解内容，再建立视觉系统，最后完成可编辑交付”的完整链路；它不提供独立图形界面，也不是把任意图片一键转换成可编辑 PPT 的软件。
+
+项目标识：`codex-ppt-refined-skill`；技能名称：`codex-ppt`。
+
+> **当前版本：v0.4.0 · 公开预览版**
+>
+> 适合试用、贡献案例和验证工作流。自动检查已覆盖文档、来源清单、公开示例和 PowerShell 语法；桌面 PowerPoint 的实际放映仍需在目标机器上复核。
 
 > 来源：图片式制作、生图任务管理、原有风格参考与组装脚本基于 [ningzimu/codex-ppt-skill](https://github.com/ningzimu/codex-ppt-skill)，原作者为 ningzimu。本项目增加原生重建与精编动画流程、辅助脚本和中文协作说明。原作者署名与 MIT 许可保留，详见[来源说明](NOTICE.md)。
 
-## 先看一个可复现的例子
+## 公开示例
 
 下面是仓库自带的三页合成示例。源稿、动画计划、静态图片和动画成品均可下载，内容不依赖私人资料。
 
-![公开示例的流程页](examples/public-demo/slide-2.png)
+<p align="center">
+  <img src="examples/public-demo/slide-2.png" alt="公开示例的流程页" width="760">
+</p>
 
-![流程页的原生动画预览](examples/public-demo/preview.gif)
+<p align="center">
+  <img src="examples/public-demo/preview.gif" alt="流程页的原生动画预览" width="760">
+</p>
 
 [查看三页示例与重放说明](examples/public-demo/README.md) · [下载可编辑源稿](examples/public-demo/source.pptx) · [下载动画成品](examples/public-demo/animated.pptx)
 
-这是原生排版与动画的功能演示，不是生图模型样片。它展示了可编辑组件、分步进入和可核对时序；不代表所有内容都会自动获得相同设计效果。
+这是原生排版与动画的功能演示，不是生图模型样片。它展示了可编辑组件、分步进入和可核对时序；不代表所有内容都会自动获得相同设计效果。示例页的结构、动画计划和核验结果都可以直接查看。
+
+## 设计原则
+
+| 原则 | 在项目中的体现 |
+| --- | --- |
+| **内容先行** | 先拆解受众、目标、证据和叙事节奏，再选择版式与视觉语言。 |
+| **组件可编辑** | 关键文字、形状、连接线和动画保持为原生对象，便于修改与复用。 |
+| **交付可核验** | 计划绑定源稿哈希，保存后重新读取时序，并对公开示例提供验证记录。 |
+| **边界可追溯** | 上游文件、翻译整理、新增代码和公开示例分别登记，不混淆来源。 |
 
 ## 谁适合使用
 
@@ -28,7 +65,7 @@
 
 由代理负责理解资料、判断版式、选择组件和编写计划；由脚本执行确定的操作；由使用者确认事实与最终效果。自动检查不能替代审美和内容判断。
 
-## 当前能力
+## 能力边界
 
 | 任务 | 由谁完成 | 当前状态 |
 | --- | --- | --- |
@@ -39,7 +76,7 @@
 | 交互、并行、媒体、退出动画 | 需要另行实现 | 当前执行器不支持 |
 | 自动检查 | 静态测试、合成稿、目标应用 | 各有覆盖范围，见[测试说明](docs/测试说明.md) |
 
-## 三种开始方式
+## 快速开始
 
 ### 只想先验证能不能用
 
@@ -76,7 +113,7 @@ Windows 上安装桌面 Microsoft PowerPoint 和 PowerShell 7 后，在仓库根
 
 代理应先检查文件，再读取当前形状编号与源文件哈希。想直接操作脚本的开发者，阅读[动画延伸与命令说明](skills/codex-ppt/docs/editable-refined-animation.md)。不要把公开示例计划直接套到自己的文件。
 
-## 环境要求与费用
+## 环境与兼容性
 
 | 操作 | 所需环境 | 是否调用外部图片接口 |
 | --- | --- | --- |
@@ -90,7 +127,18 @@ PowerPoint 网页版、WPS、macOS 与 Linux 的原生动画执行尚未作为�
 
 图片式命令行操作使用[统一运行入口](docs/快速开始.md)，确保依赖安装和执行使用同一个解释器；不要求给原生动画示例安装图片依赖。
 
-## 欢迎贡献
+## 项目结构
+
+```text
+skills/codex-ppt/       技能入口、参考资料与执行脚本
+examples/public-demo/   可下载、可重放的公开示例
+docs/                   快速开始、架构、质量与发布文档
+templates/              风格与案例贡献模板
+tests/                  静态、来源和公开示例检查
+.github/                CI、Issue 表单和 PR 模板
+```
+
+## 参与贡献
 
 先从一个可验证的小问题开始，不必会写程序：
 
@@ -102,7 +150,9 @@ PowerPoint 网页版、WPS、macOS 与 Linux 的原生动画执行尚未作为�
 
 问题反馈与功能提案使用仓库模板。新增默认行为、工具或依赖先讨论。维护约定见[维护说明](GOVERNANCE.md)，计划与未实现方向见[路线图](ROADMAP.md)。
 
-## 开发检查
+参与协作请遵循[行为准则](CODE_OF_CONDUCT.md)，安全问题与敏感信息处理方式见[安全说明](SECURITY.md)。
+
+## 本地检查
 
 ~~~shell
 python -m pip install -r requirements-dev.txt
@@ -116,6 +166,16 @@ Windows 本机的原生动画回归：
 ~~~
 
 持续集成检查结构、来源、语法和公开示例；没有 PowerPoint 的运行器不会宣称完成桌面放映验证。详细覆盖范围见[测试说明](docs/测试说明.md)。
+
+## 版本与发布
+
+项目使用语义化版本号：
+
+- **补丁版本**：修正文档、测试或兼容性问题；
+- **次版本**：增加向后兼容的工作流、脚本或示例；
+- **主版本**：改变技能入口、计划格式或使用方式。
+
+发布前请阅读[发布与上游同步](docs/发布与上游同步.md)，完成测试、来源清单核对、示例验证和变更记录。正式版本会在 GitHub Releases 中保留可读的发布说明。
 
 ## 来源与许可
 

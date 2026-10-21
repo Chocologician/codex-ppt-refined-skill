@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="520" viewBox="0 0 1440 520">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#111d30"/><stop offset="1" stop-color="#223956"/></linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#fff" stroke-opacity=".035"/></pattern>
+  </defs>
+  <rect width="1440" height="520" rx="24" fill="url(#bg)"/>
+  <rect width="1440" height="520" rx="24" fill="url(#grid)"/>
+  <rect x="72" y="70" width="42" height="5" rx="2.5" fill="#ff9a56"/>
+  <text x="72" y="136" fill="#ffb884" font-size="17" font-family="Microsoft YaHei, sans-serif" letter-spacing="4">AI 演示文稿工作流</text>
+  <text x="68" y="231" fill="#fffaf3" font-size="58" font-weight="700" font-family="Microsoft YaHei, sans-serif">让想法，成为好作品。</text>
+  <text x="72" y="283" fill="#b7c7d9" font-size="21" font-family="Microsoft YaHei, sans-serif">内容结构 · 视觉系统 · 可编辑交付 · 原生动画</text>
+  <path d="M73 351H720" stroke="#fff" stroke-opacity=".16"/>
+  <text x="72" y="393" fill="#dce5ef" font-size="17" font-family="Microsoft YaHei, sans-serif">可复现的示例，可追溯的来源，持续开放的协作。</text>
+  <g transform="translate(895 105)">
+    <rect x="45" y="0" width="333" height="236" rx="14" fill="#47617d" transform="rotate(9 210 118)"/>
+    <rect x="18" y="32" width="333" height="236" rx="14" fill="#8292a2" transform="rotate(-5 180 150)"/>
+    <rect x="0" y="52" width="354" height="248" rx="14" fill="#fffaf3"/>
+    <rect x="28" y="82" width="24" height="5" rx="2" fill="#ef8c4f"/>
+    <rect x="28" y="107" width="177" height="14" rx="3" fill="#20354c"/>
+    <rect x="28" y="136" width="114" height="6" rx="3" fill="#b5bcc4"/>
+    <rect x="28" y="171" width="87" height="81" rx="7" fill="#eadfce"/>
+    <rect x="134" y="171" width="87" height="81" rx="7" fill="#ffdbbb"/>
+    <rect x="240" y="171" width="87" height="81" rx="7" fill="#dce5eb"/>
+    <circle cx="72" cy="198" r="9" fill="#8a735b"/>
+    <circle cx="178" cy="198" r="9" fill="#ec9355"/>
+    <circle cx="284" cy="198" r="9" fill="#526b85"/>
+    <path d="M47 227h49m57 0h49m57 0h49" stroke="#20354c" stroke-width="5" stroke-linecap="round" opacity=".4"/>
+    <path d="M115 211h19m87 0h19" stroke="#8a98a5" stroke-width="2"/>
+  </g>
+  <text x="1359" y="463" text-anchor="end" fill="#8fa6be" font-size="13" font-family="Microsoft YaHei, sans-serif">CODEX PPT / REFINED WORKFLOW</text>
+</svg>
