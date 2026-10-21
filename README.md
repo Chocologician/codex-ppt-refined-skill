@@ -8,10 +8,10 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Chocologician/codex-ppt-refined-skill/actions/workflows/check.yml"><img src="https://github.com/Chocologician/codex-ppt-refined-skill/actions/workflows/check.yml/badge.svg" alt="仓库检查"></a>
-  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/版本-0.4.0%20公开预览-ea9357" alt="版本 0.4.0 公开预览"></a>
-  <a href="https://github.com/Chocologician/codex-ppt-refined-skill/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Chocologician/codex-ppt-refined-skill?label=许可" alt="MIT 许可"></a>
-  <a href="https://github.com/Chocologician/codex-ppt-refined-skill/issues"><img src="https://img.shields.io/github/issues/Chocologician/codex-ppt-refined-skill?label=议题" alt="议题"></a>
+  <a href="https://github.com/Chocologician/codex-ppt-refined-skill/actions/workflows/check.yml"><img src="docs/assets/checks.svg" alt="查看自动检查" width="124" height="28"></a>
+  <a href="CHANGELOG.md"><img src="docs/assets/version.svg" alt="版本 0.4.0 公开预览" width="184" height="28"></a>
+  <a href="LICENSE"><img src="docs/assets/license.svg" alt="MIT 开源许可" width="136" height="28"></a>
+  <a href="https://github.com/Chocologician/codex-ppt-refined-skill/issues"><img src="docs/assets/issues.svg" alt="问题与建议" width="124" height="28"></a>
 </p>
 
 <p align="center">
