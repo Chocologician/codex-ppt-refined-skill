@@ -8,10 +8,10 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Chocologician/codex-ppt-refined-skill/actions/workflows/check.yml"><img src="docs/assets/checks.svg" alt="查看自动检查" width="124" height="28"></a>
-  <a href="CHANGELOG.md"><img src="docs/assets/version.svg" alt="版本 0.4.0 公开预览" width="184" height="28"></a>
-  <a href="LICENSE"><img src="docs/assets/license.svg" alt="MIT 开源许可" width="136" height="28"></a>
-  <a href="https://github.com/Chocologician/codex-ppt-refined-skill/issues"><img src="docs/assets/issues.svg" alt="问题与建议" width="124" height="28"></a>
+  <a href="https://github.com/Chocologician/codex-ppt-refined-skill/actions/workflows/check.yml"><img src="docs/assets/checks.svg" alt="查看自动检查" width="89" height="20"></a>
+  <a href="CHANGELOG.md"><img src="docs/assets/version.svg" alt="版本 0.4.0 公开预览" width="106" height="20"></a>
+  <a href="LICENSE"><img src="docs/assets/license.svg" alt="MIT 开源许可" width="71" height="20"></a>
+  <a href="https://github.com/Chocologician/codex-ppt-refined-skill/issues"><img src="docs/assets/issues.svg" alt="问题与建议" width="77" height="20"></a>
 </p>
 
 <p align="center">

@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="184" height="28" viewBox="0 0 184 28" role="img" aria-label="版本 0.4.0 公开预览">
-  <rect width="184" height="28" rx="6" fill="#ffdbbb"/>
-  <text x="92" y="18.5" text-anchor="middle" fill="#20354c" font-size="12" font-family="Microsoft YaHei, sans-serif">v0.4.0 · 公开预览</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="106" height="20" role="img" aria-label="预览版: v0.4.0">
+  <title>预览版: v0.4.0</title>
+  <linearGradient id="shade" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient>
+  <clipPath id="clip"><rect width="106" height="20" rx="3"/></clipPath>
+  <g clip-path="url(#clip)"><path fill="#555" d="M0 0h47v20H0z"/><path fill="#e69b36" d="M47 0h59v20H47z"/><path fill="url(#shade)" d="M0 0h106v20H0z"/></g>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,Microsoft YaHei,sans-serif" font-size="11"><text x="23.5" y="15" fill="#010101" fill-opacity=".3">预览版</text><text x="23.5" y="14">预览版</text><text x="76.5" y="15" fill="#010101" fill-opacity=".3">v0.4.0</text><text x="76.5" y="14">v0.4.0</text></g>
 </svg>
